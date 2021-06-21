@@ -1,0 +1,10 @@
+<?xml version ="1.0" ?>
+<mvc>
+<!--浏览器发送的/test1请求，由TestController类处理-->
+<mapping path="/test1" class = "com.controller.TestController" method="t1"></mapping>
+
+<mapping path="/test11" class = "com.controller.TestController" method="t1">
+    <type>int</type>
+    <type>java.lang.String</type>
+</mapping>
+</mvc>

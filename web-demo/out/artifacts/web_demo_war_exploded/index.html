@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Index Page</title>
+    </head>
+    <body>
+        <h3>1.普通请求，无参数，无响应</h3>
+            <a href="test1">测试1</a>
+        <hr/>
+
+        <h3>2.普通请求，传递零散参数，无响应</h3>
+            <a href="test2?cname=bmw">测试2</a>
+
+        <hr/>
+
+        <h3>3.普通请求，传递成组参数，无响应</h3>
+            <form action="test3" method="post">
+                <ul>
+                    <li><input name="cno" placeholder="cno" /></li>
+                    <li><input name="cname" placeholder="cname" /></li>
+                    <li><input name="color" placeholder="color" /></li>
+                    <li><input name="price" placeholder="price" /></li>
+                    <li><input type="submit" value="测试3" /></li>
+                </ul>
+            </form>
+        <hr/>
+
+        <h3>4.普通请求，传递文件参数和普通参数，无响应</h3>
+            <form action="test4" method="post" enctype="multipart/form-data">
+                <ul>
+                    <li><input name="cname" placeholder="cname" /></li>
+                    <li><input type="file" name="file" /></li>
+                    <li><input type="submit" value="测试4" /></li>
+                </ul>
+            </form>
+        <hr/>
+
+        <h3>5.普通请求，重定向响应</h3>
+            <a href="test5">测试5</a>
+        <hr/>
+
+        <h3>6.普通请求，转发响应</h3>
+            <a href="test6">测试6</a>
+        <hr/>
+
+        <h3>7.普通请求，直接响应文本</h3>
+            <a href="test7">测试7</a>
+        <hr/>
+
+        <h3>8.普通请求，直接响应JSON格式集合文本</h3>
+            <a href="test8">测试8</a>
+        <hr/>
+
+    </body>
+</html>
